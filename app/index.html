@@ -109,10 +109,14 @@
       <svg class="brand-mark" viewBox="0 0 512 512" aria-hidden="true"><use href="#i-mark-i"/></svg>
       <span class="brand-text"><span class="suite-kicker">Nova suite<span class="kicker-more"> · Novacane</span></span><span class="wordmark small">Nova Index</span></span>
     </button>
+    <div class="top-right top-actions">
+    <!-- Nova Portal: who's signed in (your planet, name and role) -->
+    <nova-portal-badge></nova-portal-badge>
     <!-- Options: theme, sound, refresh, sign out -->
-    <button id="options" class="icon-btn top-right" type="button" aria-label="Options" title="Options" aria-haspopup="dialog" aria-controls="options-sheet">
+    <button id="options" class="icon-btn" type="button" aria-label="Options" title="Options" aria-haspopup="dialog" aria-controls="options-sheet">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
     </button>
+    </div>
   </header>
 
   <main>
@@ -266,5 +270,6 @@
 
 <script src="/app/sfx.js"></script>
 <script src="/app/memory/memory.js"></script>
+<script src="/portal/badge.js" defer></script>
 </body>
 </html>

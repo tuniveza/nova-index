@@ -175,6 +175,12 @@ input:focus, select:focus, textarea:focus {
 }
 .top-left { justify-self: start; }
 .top-right { justify-self: end; }
+.top-actions { display: flex; align-items: center; gap: 6px; }
+/* The Nova Portal badge: just the planet on a phone, so the brand stays centred */
+@media (max-width: 560px) {
+  .top-actions nova-portal-badge::part(words) { display: none; }
+  .top-actions nova-portal-badge::part(chip) { padding: 0 3px; gap: 0; }
+}
 .hub-mark { width: 26px !important; height: 26px !important; border-radius: 8px; }
 .brand {
   justify-self: center; min-width: 0;
