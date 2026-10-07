@@ -1385,6 +1385,13 @@
       state.stats = r.data;
       showApp();
       await loadAll();
+      // Opened from someone's Nova Portal profile ("Open my Nova Index"): show just theirs
+      const params = new URLSearchParams(location.search);
+      if (["studio", "staff", "customer"].includes(params.get("scope"))) setScope(params.get("scope"));
+      if (params.get("owner")) {
+        $("search").value = params.get("owner");
+        $("search").dispatchEvent(new Event("input"));
+      }
     } catch (err) {
       // A 401 has already shown the sign-in card; anything else is worth saying
       if (state.signedIn || !$("login").hidden) return;

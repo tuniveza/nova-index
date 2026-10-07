@@ -104,10 +104,11 @@ the differences lit up, and can put your edit on top of theirs in one tap, or ke
 | Nova Agent (its key) | The studio's memory and staff memory; never customers' |
 | The website's NovaBot | Only that customer's own file and the public studio facts |
 | Nova Hub and Nova Index, signed in | Everything, including approvals |
-| Staff signing in with Nova Portal (coming) | Staff who aren't admins: the studio's memory and their own; admins: everything |
+| Staff signed in with [Nova Portal](https://github.com/tuniveza/nova-portal) | Staff who aren't admins: the studio's memory and their own; admins: everything |
 
-Today Nova Index signs in with the studio's shared Nova Hub password. **Nova Portal**, one
-sign-in for the whole suite, is coming: then each person sees what's theirs to see.
+Nova Index signs in with **Nova Portal**, the suite's one sign-in ("✦ Sign in with Nova
+Portal"), so each person sees what's theirs to see. The studio's shared Nova Hub password
+still works too, and sees everything.
 
 The memory engine runs on Nova Bot's worker (`src/memory/` in
 [nova-bot](https://github.com/tuniveza/nova-bot)): the store, extraction and the API. The
@@ -152,3 +153,4 @@ docs/media/             README images
 | [nova-calendar](https://github.com/tuniveza/nova-calendar) | A cosmic calendar of note cards and day cards |
 | [nova-notes](https://github.com/tuniveza/nova-notes) | A note editor that writes from the centre outwards |
 | [nova-observatory](https://github.com/tuniveza/nova-observatory) | A dashboard of every project |
+| [nova-portal](https://github.com/tuniveza/nova-portal) | One sign-in for the suite, and a planet for everyone |
